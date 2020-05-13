@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8758" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:07Z">
+    <groups>
+    </groups>
+    <test name="IE" duration-ms="5209" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:03Z">
+      <class name="crossbrowser.Testcase1">
+        <test-method status="FAIL" signature="openBrowsers(java.lang.String)[pri:0, instance:crossbrowser.Testcase1@6fe7aac8]" name="openBrowsers" duration-ms="5155" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unexpected error launching Internet Explorer. Browser zoom level was set to 125%. It should be set to 100%
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LAPTOP-PATGFM90', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unexpected error launching Internet Explorer. Browser zoom level was set to 125%. It should be set to 100%
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T16:15:40.131Z'
+System info: host: 'LAPTOP-PATGFM90', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:223)
+at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:215)
+at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:152)
+at crossbrowser.Config.openBrowser(Config.java:24)
+at crossbrowser.Testcase1.openBrowsers(Testcase1.java:10)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowsers -->
+      </class> <!-- crossbrowser.Testcase1 -->
+    </test> <!-- IE -->
+    <test name="Chrome" duration-ms="7349" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:05Z">
+      <class name="crossbrowser.Testcase1">
+        <test-method status="PASS" signature="openBrowsers(java.lang.String)[pri:0, instance:crossbrowser.Testcase1@96def03]" name="openBrowsers" duration-ms="7313" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowsers -->
+      </class> <!-- crossbrowser.Testcase1 -->
+    </test> <!-- Chrome -->
+    <test name="Firefox" duration-ms="8758" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:07Z">
+      <class name="crossbrowser.Testcase1">
+        <test-method status="PASS" signature="openBrowsers(java.lang.String)[pri:0, instance:crossbrowser.Testcase1@10e92f8f]" name="openBrowsers" duration-ms="8721" started-at="2020-02-20T03:48:58Z" finished-at="2020-02-20T03:49:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowsers -->
+      </class> <!-- crossbrowser.Testcase1 -->
+    </test> <!-- Firefox -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test name="Chrome">
+  <parameter name="Browsername" value="Chrome"/>
+  <classes>
+  <class name="crossbrowser.Testcase1"/>
+  </classes>
+  </test> <!-- Test -->
+  <test name="Firefox">
+  <parameter name="Browsername" value="Firefox"/>
+  <classes>
+  <class name="crossbrowser.Testcase1"/>
+  </classes>
+  </test> <!-- Test -->
+  <test name="IE">
+  <parameter name="Browsername" value="IE"/>
+  <classes>
+  <class name="crossbrowser.Testcase1"/>
+  </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
